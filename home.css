@@ -1,0 +1,109 @@
+body{
+    background-color: grey;
+
+}
+
+#pagina{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+header{
+    background-color: black;
+    text-align: center;
+    color:white;
+    line-height: 100px;
+}
+
+#conteudo{
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    margin: 40px 0px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+#animacao{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(139, 0, 86);
+    transition: 0.3s;
+
+}
+
+#animacao:hover{
+    width: 420px;
+    height: 420px;
+    background-color: rgb(123, 0, 139);
+}
+.conjunto{
+    width: auto;
+    height: auto;
+    padding: 20px;
+     margin: 20px 0px;
+     background-color: rgb(255, 196, 216);
+}
+button{
+    padding: 40px;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgb(113, 43, 226);
+    color: white;
+}
+
+button:disabled{
+    background-color: rgb(255, 0, 221);
+
+}
+.divVazia{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 5px;
+}
+
+.divVazia:empty{
+    background-color: rgb(160, 95, 114);
+    width: 230px;
+    height: 230px;
+    
+
+}
+.conjunto p:first-of-type{
+     color: rgb(38, 0, 255);
+     font-size: 14pt;
+}
+
+.conjunto p:last-of-type{
+ color: rgb(128, 0, 90);
+}
+
+#foco input:focus{
+    box-shadow: 3px 3px 3px 3px rgb(255, 80, 162);
+
+}
+
+.conjunto p::selection{
+    background-color: rgb(0, 110, 255);
+    color: rgb(71, 181, 255);
+}
+
+.check{
+    width: 30px;
+    height: 30px;
+}
+.check::after{
+    content: "inativo";
+    left: 30px;
+    position: relative;
+}
+
+.check:checked::after{
+    content: "ativo";
+}
